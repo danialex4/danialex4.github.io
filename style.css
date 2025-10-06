@@ -16,7 +16,7 @@ html, body {
 }
 
 /* Full-page background for index page */
-body.index-page {
+body {
   display: flex;
   flex-direction: column;
   min-height: 100dvh; /* dynamic viewport height for mobile */
