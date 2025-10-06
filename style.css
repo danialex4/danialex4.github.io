@@ -36,6 +36,7 @@ h3 {
 
 p {
   margin: 0.3rem 0;
+font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
 nav {
@@ -124,6 +125,7 @@ footer a {
   margin-right: 120px;
 
 }
+
 
 
 
