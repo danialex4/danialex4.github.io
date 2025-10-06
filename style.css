@@ -123,8 +123,9 @@ footer a {
 .index-page p {
   margin-left: 120px;
   margin-right: 120px;
-  clamp(1rem, 2.2vw, 1.125rem)
+  font-size: 30px;
 }
+
 
 
 
