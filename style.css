@@ -97,6 +97,11 @@ main a {
   max-width: 600px;
   font-size: 1.5rem;
 }
+.cv-content p, 
+.cv-content h2, 
+.cv-content h3, {
+    font-size: 1.25rem;
+}
 
 footer {
   background-color: #d1c7bd;
