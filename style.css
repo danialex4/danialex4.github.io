@@ -1,26 +1,38 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 
-html, body {
-  height: 100%;
+/* Universal reset and mobile-safe box sizing */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  max-width: 100%; /* prevent accidental overflow */
 }
+
 html, body {
-  margin: 0;
-  padding: 0;
   height: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden; /* prevent horizontal scrolling */
 }
 
-body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background-image: url('https://images.unsplash.com/photo-1637946175559-22c4fe13fc54?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-repeat: no-repeat; background-position: center; font-family: "Raleway", sans-serif; color: white; }
+/* Full-page background for index page */
+body.index-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh; /* dynamic viewport height for mobile */
+  background-image: url('https://images.unsplash.com/photo-1637946175559-22c4fe13fc54?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
 
+/* Headings */
 h1 {
   font-family: "Playfair Display", serif;
   color: white;
   font-size: clamp(1.5rem, 5vw, 3rem);
-  margin: 0;
 }
 
 h2 {
@@ -35,11 +47,13 @@ h3 {
   margin: 0.5rem 0;
 }
 
+/* Paragraphs */
 p {
-  margin: 0.3rem 0;
   font-size: 1rem;
+  margin: 0.3rem 0;
 }
 
+/* Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -50,13 +64,10 @@ nav {
   padding: 1rem 2rem;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  box-sizing: border-box;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 1rem;
 }
@@ -75,23 +86,25 @@ nav a:hover {
   background: #d1c7bd;
 }
 
+/* Main content */
 main {
-  flex: 1;
+  flex: 1; /* take remaining space */
   padding: 6rem 2rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-  box-sizing: border-box;
 }
 
+/* Links inside main */
 main a {
   color: white;
   font-weight: 400;
   text-decoration: none;
 }
 
+/* CV content */
 .cv-content {
   display: flex;
   flex-direction: column;
@@ -100,12 +113,14 @@ main a {
   max-width: 600px;
   font-size: 1.5rem;
 }
+
 .cv-content p, 
 .cv-content h2, 
 .cv-content h3 {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
+/* Footer */
 footer {
   background-color: #d1c7bd;
   padding: 1rem 2rem;
@@ -113,9 +128,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  box-sizing: border-box;
 }
-
 
 footer a {
   text-decoration: none;
@@ -132,9 +145,8 @@ footer a {
   flex: 1;
   text-align: center;
 }
+
+/* Page-specific adjustments */
 .index-page p {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 10px;
-  box-sizing: border-box;
+  padding: 0 10px; /* use padding instead of margin to prevent overflow */
 }
