@@ -36,7 +36,7 @@ h3 {
 
 p {
   margin: 0.3rem 0;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 nav {
@@ -121,6 +121,6 @@ footer a {
   text-align: center;
 }
 .index-page p {
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
